@@ -97,7 +97,7 @@ public class CollectionManager {
         if (isСontain(f)) return false;
         flats.put(f.getId(), f);
         collection.add(f);
-
+        update();
         return true;
     }
 
@@ -107,7 +107,7 @@ public class CollectionManager {
         if (a == null) return false;
         flats.remove(a.getId());
         collection.remove(a);
-
+        update();
         return true;
     }
 
@@ -124,6 +124,7 @@ public class CollectionManager {
                 if (f.getId()>currentId) currentId = f.getId();
                 flats.put(f.getId(), f);
             }
+        update();
         return true;
     }
 

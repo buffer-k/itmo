@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 /**
  * Реализация интерфейса консоли для ввода команд и вывода результата
- * @author dim0n4eg
+
  */
 public class ConsoleManager implements Console{
     private static final String P = "$ ";
